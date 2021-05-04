@@ -7,4 +7,4 @@
 #cd $PBS_O_WORKDIR
 #mpirun --hostfile $PBS_NODEFILE -np 4 ./series 100
 
-mpirun -np 7 ./series 40
+mpirun -np 7 ./series_pi 40
