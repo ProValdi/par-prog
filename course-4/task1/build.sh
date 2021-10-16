@@ -1,0 +1,1 @@
+gcc -fopenmp task1.c -o task1.exe
