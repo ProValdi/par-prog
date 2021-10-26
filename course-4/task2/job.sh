@@ -1,0 +1,1 @@
+OMP_NUM_THREADS=12 ./task2.exe $1
