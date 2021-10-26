@@ -9,8 +9,7 @@
 example running task for the interval [1,5]:
 
 ```
-make
-./job 5
+make && ./job.sh 5
 ```
 
 result:
