@@ -6,5 +6,5 @@ all:
 	diff parallel.txt not-parallel.txt
 
 clean:
-	rm -f *.exe
 	rm -f *.txt
+	rm -f *.exe
