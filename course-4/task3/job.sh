@@ -1,1 +1,0 @@
-OMP_NUM_THREADS=8 ./task3.exe

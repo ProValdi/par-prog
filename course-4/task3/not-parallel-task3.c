@@ -20,7 +20,7 @@ int main (int argc, char** argv) {
     for (int i = 1; i < N; i++) 
         b[i] = a[i-1]*a[i]*a[i+1]/3;
 
-    printf("Summary spent time not-parallel: %lf\n", omp_get_wtime() - timeStart);
+    printf("Summary spent time not-parallel: %lf\n\n", omp_get_wtime() - timeStart);
 
     FILE *file;
     file = fopen("./not-parallel.txt", "w");

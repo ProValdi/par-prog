@@ -20,11 +20,11 @@ int main (int argc, char** argv) {
 
     double timeStart = omp_get_wtime();
 
-    #pragma omp parallel for shared(a, b) schedule(static, partSize)
+    #pragma omp parallel for shared(a, b)
     for (int i = 1; i < N; i++)
         b[i] = a[i-1]*a[i]*a[i+1]/3;
 
-    printf("Summary spent time parallel: %lf\n", omp_get_wtime() - timeStart);
+    printf("Summary spent time parallel: %lf\n\n", omp_get_wtime() - timeStart);
 
     FILE *file;
     file = fopen("./parallel.txt", "w");
