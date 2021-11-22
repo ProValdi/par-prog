@@ -5,15 +5,6 @@
 
 void printToFile(FILE *file, int **matrix, int x, int y);
 
-void print(int **matrix, int x, int y) {
-    for(int i = 0; i < x; i++) {
-        for(int j = 0; j < y; j++)
-            printf("%d ", matrix[i][j]);
-        printf("\n");
-    }
-    printf("\n");
-}
-
 // this app depends on a parallel task so it should be launched last
 int main (int argc, char** argv) {
 
@@ -79,18 +70,18 @@ int main (int argc, char** argv) {
     fclose(file);
 
 
-    // // neatly free a memory
-    // for(int i = 0; i < N1x; i++)
-    //     free(matrix1[i]);
-    // free(matrix1);
+    // neatly free a memory
+    for(int i = 0; i < N1x; i++)
+        free(matrix1[i]);
+    free(matrix1);
 
-    // for(int i = 0; i < N2x; i++)
-    //     free(matrix2[i]);
-    // free(matrix2);
+    for(int i = 0; i < N2x; i++)
+        free(matrix2[i]);
+    free(matrix2);
 
-    // for(int i = 0; i < N1x; i++)
-    //     free(result[i]);
-    // free(result);
+    for(int i = 0; i < N1x; i++)
+        free(result[i]);
+    free(result);
     return 0;
 }
 
