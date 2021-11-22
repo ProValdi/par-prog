@@ -1,1 +1,1 @@
-OMP_NUM_THREADS=20 ./task3.exe
+OMP_NUM_THREADS=8 ./task4.exe

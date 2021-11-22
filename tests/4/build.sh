@@ -1,1 +1,1 @@
-gcc -fopenmp task3.c -o task3.exe
+gcc -fopenmp task4.c -o task4.exe
